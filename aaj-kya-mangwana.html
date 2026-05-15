@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aaj Kya Mangwana Hai?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b1d3a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6600;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      animation: fadeInDown 1.5s ease;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .section {
+      width: 48%;
+      padding: 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 1.5s ease forwards;
+    }
+    .funny {
+      background-color: #ff9933;
+      animation-delay: 0.5s;
+    }
+    .real {
+      background-color: #339966;
+      animation-delay: 1s;
+    }
+    footer {
+      background-color: #ff6600;
+      text-align: center;
+      padding: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      animation: bounceIn 2s ease;
+    }
+    /* Animations */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes bounceIn {
+      0% {transform: scale(0.8);}
+      50% {transform: scale(1.1);}
+      100% {transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <header>Aaj Kya Mangwana Hai? 🍕🍛</header>
+  <div class="container">
+    <div class="section funny">
+      <h2>Funny Explanation</h2>
+      <p>Everyone shouted “Pizza! Paneer! Biryani!” with full excitement. One person calculated headcount, another reminded “He’s fasting!” Chaos followed until late night when only one voice remained: “Kuch bhi mangwa lo yaar…” 😅</p>
+    </div>
+    <div class="section real">
+      <h2>Real Explanation</h2>
+      <p>Dinner planning meant tracking headcount, fasting schedules, and Veg vs Non‑Veg preferences. Initially fun, but enthusiasm faded over time, delaying orders and adding to late‑night fatigue ⏳.</p>
+    </div>
+  </div>
+  <footer>Aaj Kya Mangwana Hai? 🍕🍛</footer>
+</body>
+</html>
